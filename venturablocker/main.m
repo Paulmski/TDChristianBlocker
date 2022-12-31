@@ -45,6 +45,8 @@
                 @"com.apple.InstallAssistant.Ventura",
                 @"com.apple.InstallAssistant.macOSVentura",
                 @"com.apple.InstallAssistant.Seed.macOS13Seed1",
+                @"com.apple.MobileSMS",
+                @"com.apple.FaceTime"
             ];
         }
         if ([bundleIDsToBlock containsObject:bundleID]) {
@@ -71,12 +73,12 @@
 
                     NSString *messageText = [userDefaults stringForKey:@"AlertTitle"];
                     if (!messageText) {
-                        messageText = NSLocalizedString(@"The application \"%@\" has been blocked", @"");
+                        messageText = NSLocalizedString(@"The application \"%@\" has been blocked.", @"");
                     }
 
                     NSString *informativeText = [userDefaults stringForKey:@"AlertText"];
                     if (!informativeText) {
-                        informativeText = NSLocalizedString(@"Contact your administrator for more information", @"");
+                        informativeText = NSLocalizedString(@"TDChristian policy does not allow this application to be opened.", @"");
                     }
 
                     // Configure the alert
