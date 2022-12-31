@@ -63,3 +63,4 @@ pkgutil --forget com.hjuutilainen.bigsurblocker
 # License
 
 Big Sur Blocker is licensed under [the MIT License](https://github.com/hjuutilainen/bigsurblocker/blob/main/LICENSE).
+# TDBlocker
